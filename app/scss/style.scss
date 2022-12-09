@@ -10,6 +10,7 @@
   background-color: $dark-bg;
   border-bottom: 1px solid $dark-border;
   color: $header-text;
+  letter-spacing: normal;
 
   &-row {
     display: flex;
@@ -31,6 +32,7 @@
 
     &__link {
       color: $header-text;
+      transition: opacity 0.2s ease-in;
     }
 
     &__link--active {
@@ -47,18 +49,97 @@
       width: 100%;
       background-color: $accent;
     }
+
+    &__link:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: $header-text;
+  }
+
+  .logo strong {
+    font-weight: 700;
   }
 }
 
-.logo {
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  color: $header-text;
-}
+// Header
 
-.logo strong {
-  font-weight: 700;
+.header {
+  min-height: 695px;
+  background-color: $dark-bg;
+  color: $header-text;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+
+  &__wrapper {
+    padding: 0 15px;
+    max-width: 660px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+    color: $header-text;
+    font-weight: 700;
+  }
+
+  &__title strong {
+    font-size: 60px;
+    line-height: 84px;
+  }
+
+  &__title em {
+    font-style: normal;
+    color: $accent;
+  }
+
+  &__text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: $header-text;
+    margin-bottom: 40px;
+  }
+
+  &__text p + p {
+    margin-top: 0.5em;
+  }
+
+  .btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    height: 48px;
+    padding: 12px 28px;
+    color: $header-text;
+    background-color: $accent;
+    border-radius: 5px;
+    letter-spacing: 0.15px;
+    transform: opacity 0.2s ease-in;
+  }
+
+  .btn:hover {
+    opacity: 0.8;
+  }
+
+  .btn:active {
+    position: relative;
+    top: 1px;
+  }
 }
 
 @import 'media';
