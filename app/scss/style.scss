@@ -1,0 +1,15 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+// Nav
+
+.nav {
+  background-color: #171718;
+  color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #26292d;
+}
+
+@import 'media';
