@@ -9,6 +9,12 @@ body {
   font-family: 'DM Sans', sans-serif;
   color: $black-text;
   letter-spacing: -0.5px;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -159,10 +165,12 @@ body {
   text-align: center;
   row-gap: 40px;
 
-  &__item {
+  &__item,
+  &__item a {
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
+    color: $black;
   }
 
   &__item p + p {
@@ -176,6 +184,7 @@ body {
   background-color: $dark-bg;
   padding: 60px 0 50px;
   color: $header-text;
+  margin-top: auto;
 
   &__wrapper {
     display: flex;
