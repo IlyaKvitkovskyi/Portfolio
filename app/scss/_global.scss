@@ -29,3 +29,141 @@ body {
   color: $accent;
   text-align: center;
 }
+
+// Btns
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  height: 48px;
+  padding: 12px 28px;
+  color: $header-text;
+  background-color: $accent;
+  border-radius: 5px;
+  letter-spacing: 0.15px;
+  transform: opacity 0.2s ease-in;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn-outline {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  height: 48px;
+  border-radius: 5px;
+  padding: 12px 20px;
+  border: 1px solid $blackpure;
+  color: $blackpure;
+  transform: opacity 0.2s ease-in;
+}
+
+.btn-outline:hover {
+  opacity: 0.8;
+}
+
+.btn-outline:active {
+  position: relative;
+  top: 1px;
+}
+
+// Nav
+
+.nav {
+  padding: 20px 0;
+  background-color: $dark-bg;
+  border-bottom: 1px solid $dark-border;
+  color: $header-text;
+  letter-spacing: normal;
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    &__link {
+      color: $header-text;
+      transition: opacity 0.2s ease-in;
+    }
+
+    &__link--active {
+      position: relative;
+    }
+
+    &__link--active::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 100%;
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: $accent;
+    }
+
+    &__link:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: $header-text;
+  }
+
+  .logo strong {
+    font-weight: 700;
+  }
+}
+
+// Footer
+
+.footer {
+  background-color: $dark-bg;
+  padding: 60px 0 50px;
+  color: $header-text;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 27px;
+  }
+
+  .social {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+  }
+
+  .copyright {
+    font-size: 16px;
+  }
+
+  .copyright p + p {
+    margin-right: 0.5em;
+  }
+}
