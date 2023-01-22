@@ -12,6 +12,15 @@
     }
   }
 
+  // Nav
+  .nav-row {
+    justify-content: space-between;
+  }
+
+  .dark-mode-btn {
+    order: 0;
+  }
+
   // General
   .section {
     padding: 40px 0;
